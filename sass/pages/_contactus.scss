@@ -1,0 +1,75 @@
+.contactus{
+  &__mapwrapper{
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+
+  &__alititle{
+    margin-top: 2rem; 
+  }
+  
+  &__forms{
+    display:grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: 1fr min-content 2fr;
+    h4 {
+      font-weight:bold;
+    }
+
+    @include respond(phone){
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__feedback-sep{
+    width: 4px;
+    height: 100%;
+    // background-color: rgba($color-primary-light, .2);
+  }
+
+  &__info{
+    padding-top: 1rem;
+  }
+
+  &__feedback{
+    
+    
+  }
+
+  &__content{
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    width: $container-width;
+    display:flex;
+    flex-direction:column;
+
+    @include respond(phone){
+      width: $container-width-phone;
+    }
+    
+    h3{
+      color: $color-title;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid $color-title;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__highlight-contact{
+    font-size: 1.5rem;
+    color: $color-title;
+    &--1688{
+      color: $color-red;
+    }
+  }
+}
+
+
+#contactus-map{
+  width: 100%;
+  height: 500px;
+  @include respond(phone){
+    display:none;
+  }
+}

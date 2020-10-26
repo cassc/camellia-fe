@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.7.2-web/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>__title.en__ - __title.simple__</title>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-bright">
+      <input type="checkbox" class="navbar__checkbox" id="navi-toggle">
+      <div class="navbar__body">
+        <div class="navbar-logo-box">
+          <!-- <img class="navbar-logo" src="/img/logo.png" alt="BTP logo"> -->
+          <span class="navbar__text-logo"><span>__title.en__</span></span>
+          <label for="navi-toggle" class="navbar__menu__button">
+            <svg class="navbar__menu-icon">
+              <use xlink:href="/img/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="navbar__page-title">__title.simple__</div>
+        <div class="navbar-menu-holder">
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/index.html">首页</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/products.html">产品中心</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link--active navbar-menu__link" href="/solutions.html">解决方案</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/news.html">行业新闻</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/aboutus.html">关于我们</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/contactus.html">联系我们</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar__expand">
+        <a class="navbar__expand-link" href="/index.html">首页</a>
+        <a class="navbar__expand-link" href="/products.html">产品中心</a>
+        <a class="navbar__expand-link--active navbar__expand-link" href="/solutions.html">解决方案</a>
+        <a class="navbar__expand-link" href="/news.html">行业新闻</a>
+        <a class="navbar__expand-link" href="/aboutus.html">关于我们</a>
+        <a class="navbar__expand-link" href="/contactus.html">联系我们</a>
+      </div>
+    </nav>
+
+
+    <div class="mtwocol__content">
+      <div class="mtwocol__left products__left">
+        <div>
+          <div class="products__header-img" style="background-image: url('/img/absm.jpg')"></div>
+          <h3> 解决方案 </h3><hr>
+          <p>
+            我们为客户提供一站式软硬件结合服务方案，可针对企业的具体情况，针对不同的应用场景提出个性化定制服务，设计硬件设备及软件系统，提供从数据库到云平台及App的整套开发服务。
+          </p>
+          
+          <a href="#sol-1" data-toggle="modal" data-target="#sol-1"> RFID库存管理服务 </a><br>
+          <a href="#sol-2" data-toggle="modal" data-target="#sol-2"> RFID服装管理系统 </a><br>
+          <a href="#sol-3" data-toggle="modal" data-target="#sol-3"> “物联网+区块链”可追溯防伪系统 </a><br>
+          <a href="#sol-4" data-toggle="modal" data-target="#sol-4"> 智能体脂秤解决方案 </a><br>
+          
+        </div>
+        
+      </div>
+      <div class="mtwocol__right">
+        <div class="products__grid">
+          <div>
+            <div class="products__item wow animated fadeIn" style="background-image: url('/img/sol-rfid-warehouse.jpeg')"
+                 data-toggle="modal" data-target="#sol-1">
+              <div class="products__item-content">
+                <h4>RFID库存管理服务</h4>
+                <p>将RFID技术结合我们独立开发的云服务，让您轻松管理产品的生产、运输、储存及盘点等各个阶段</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <div class="products__item wow animated fadeIn" style="background-image: url('/img/rfidapparel.jpg')"
+                 data-toggle="modal" data-target="#sol-2">
+              <div class="products__item-content">
+                <h4>RFID服装管理系统</h4>
+                <p>针对服装零售供应链各个环节的管理痛点，定制基于物联网技术的样衣管理系统</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="products__item wow animated fadeIn" style="background-image: url('/img/blockchain-iot.jpg')"
+                 data-toggle="modal" data-target="#sol-3">
+              <div class="products__item-content">
+                <h4>“物联网+区块链”可追溯防伪系统</h4>
+                <p>将区块链技术融合于物联网系统</p>
+              </div>
+            </div>
+          </div>
+
+                    
+          <div>
+            <div class="products__item wow animated fadeIn" style="background-image: url('/img/scale-long.jpeg')"
+                 data-toggle="modal" data-target="#sol-4">
+              <div class="products__item-content">
+                <h4>智能体脂秤解决方案</h4>
+                <p>蓝牙/WIFI四、八电极智能体脂秤</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="modal fade" id="sol-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">智能体脂秤解决方案</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title"></h4>
+            <div class="modalprod__img" style="background-image:url('/img/scale-white.jpg')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section">
+                本智能体脂秤通过测量数据，经身体健康指标分析系统分析后，能为用户提供直观的测量和分析结果。云平台自动跟踪记录测量结果，并为用户生成直观的周月年报表，提供个性化的健康建议，更科学地管理个人体重。可提供配套移动端或桌面端网页/App/小程序等。
+              </div>
+
+              <div class="modalprod__section">
+                <h5>方案特点</h5>
+                <ul>
+                  <li>可选配标准或八电极</li>
+                  <li>支持蓝牙及WIFI</li>
+                  <li>可定制小程序、App及H5网页应用</li>
+                  <li>可对接客户云平台</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">联系我们</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="modal fade" id="sol-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">“物联网+区块链”可追溯防伪系统</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title"></h4>
+            <div class="modalprod__img" style="background-image:url('/img/btc.jpg')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section">
+                <p>本系统利用区块链账本的不可篡改、可追溯、去中心化特点，加上RFID芯片技术，极大地增加伪造成本从而实现防伪的目标。</p>
+
+                <p>通过加密RFID标签封装在产品或产品包装上，为每个产品赋予各自的数据ID。在产品流通的各个环节均在区块链上有唯一一条不可篡改的操作记录。</p>
+              </div>
+
+              <div class="modalprod__section">
+                <h5>方案特点</h5>
+                <ul>
+                  <li>分布式：使用公链，杜绝中心化易攻击的缺陷；</li>
+                  <li>不可篡改：由于使用了技术成熟的公链，攻击者修改历史记录的经济成本极高，且成功概率极小；</li>
+                  <li>产品标识：使用RFID标签配合本公司的RFID读写器快速查询产品生产与流通记录，灵活管理产品； </li>
+                  <li>异常预警：用户可定义异常操作或异常环境预警，防损防盗。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">联系我们</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="sol-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">RFID系统定制化服务</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title"></h4>
+            <div class="modalprod__img" style="background-image:url('/img/alco-rfid.jpg')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section">
+                本方案解决了产品在生产和流通过程中的信息缺乏流通性的痛点。利用RFID+物联网技术实现全面可靠的信息化管理。
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">联系我们</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sol-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">RFID服装管理系统</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title"></h4>
+            <div class="modalprod__img" style="background-image:url('/img/clothing-rfid.jpg')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section">
+                <p>基于物联网技术的RFID服装管理系统，提供RFID服装标签制作及编码方案，仓储管理解决App，单品找货方案等。通过在每件衣服上添加一个RFID标签，让每件衣服都有电子唯一的身份标识，从而可实现衣服从制作、出库、物流、仓储、销售等整个流程的实时智能化跟踪管理。</p>
+              </div>
+              <div class="modalprod__section">
+                <h5>方案特点</h5>
+                <ul>
+                  <li>全环节可追溯：从生产到出库到销售全记录</li>
+                  <li>提高盘点效率：解决了仓库盘点、定位找货的难题 </li>
+                  <li>防盗：轻松防盗，减少样品丢失率 </li>
+                  <li>可视化管理：提供清晰简易的操作平台，方便快速地导入、查找出各服装的相关详细信息 </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">联系我们</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__body">
+        <div>
+          <h3><i class="fa fa-map-marker"></i> 联系我们</h3>
+          <h4>中国：</h4>
+          <p class="footer-contact">
+            地址：__contact.address__<br>
+            电话：__contact.phone__<br>
+            电子邮箱：__contact.email__<br>
+          </p>
+          <h4>中国香港：</h4>
+          <p class="footer-contact">
+            地址：香港香港新界葵涌葵昌路<br>
+            电话：__contact.phone__<br>
+            电子邮箱：__contact.email__<br>
+          </p>
+        </div>
+        <div>
+          <h3><i class="fab fa-product-hunt"></i> 产品中心</h3>
+          <p> <a href="#">RFID便携读写器</a></p>
+          <p> <a href="#">Lora灌溉系统</a></p>
+          <p> <a href="#">RFID标签</a></p>
+          <p> <a href="#">2G/WIFI模块</a></p>
+        </div>
+        <div>
+          <h3><i class="fab fa-servicestack"></i> 解决方案</h3>
+          <p> <a href="#">RFID定制服务</a></p>
+          <p> <a href="#">区块链智能硬件</a></p>
+          <p> <a href="#">无人管理智慧终端</a></p>
+        </div>
+        <div>
+          <h3><i class="fa fa-heart"></i> 关于我们</h3>
+          <p> <a href="#">公司简介</a></p>
+          <p> <a href="#">联系方式 </a></p>
+          <p> <a href="#">团队介绍 </a></p>
+        </div>    
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

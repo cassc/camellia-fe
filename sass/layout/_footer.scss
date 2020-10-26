@@ -1,0 +1,44 @@
+.footer{
+  margin-top: 4rem;
+  background-color: $color-black;
+
+  @include respond(phone){
+    margin-top: 3rem;
+  }
+  
+  &__body{
+    margin: 0 auto;
+    width: $container-width;
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+    @include respond(phone){
+      display:none;
+    }
+  }
+
+  &__bodyphone{
+    display:none;
+    @include respond(phone){
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      font-size: .5rem;
+      width: $container-width-phone;
+      color: $color-white;
+      height: 2rem;
+      padding: 4px;
+    }
+  }
+
+  &__beian{
+    & a {
+      color: $color-secondary-dark !important;
+    }
+  }
+
+  &__phone{
+    font-size: 2rem;
+    color: $color-title;
+  }
+}

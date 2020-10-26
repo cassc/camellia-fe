@@ -1,0 +1,144 @@
+.dealer{
+  margin-top: 1.15rem;
+  &__list-title{
+    @include homeTitlesFont;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__holder{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__main{
+    width: 26rem;
+  }
+
+  &__country-q{
+    @include homeTitlesFont;
+    font-size:0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__country-select{
+    @include inheritFontAndColor;
+    width: 18rem;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: $color-light-gray-4;
+    margin-bottom: 1.85rem;
+  }
+
+  &__country-name{
+    @include homeTitlesFont;
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+  }
+
+  &__store{
+    line-height: 1;
+    font-size: 0.8rem;
+    margin-bottom: 1.8rem;
+    &-name{
+      font-weight: bold;
+      margin-bottom: 0.85rem;
+    }
+
+    &-meta{
+      &:not(:last-child){
+        margin-bottom: 0.75rem;
+      }
+      
+      &--url{
+        color: $color-blue-light;
+      }
+
+      &--address{
+        
+      }
+
+      &--phone{
+        
+      }
+    }
+  }
+
+  &__side{
+    
+  }
+
+  &__request-text{
+    
+  }
+
+  &__request-btn{
+    padding: 0.9rem 0.85rem !important;
+    font-size: 0.8rem;
+  }
+}
+
+
+.dealer-apply{
+  margin-bottom: 2rem;
+  
+  &__title{
+    @include homeTitlesFont;
+    font-size: 1.2rem;
+    margin-top: 1.15rem;
+    margin-bottom: 2rem;
+  }
+
+  &__field-name{
+    font-size:0.8rem;
+    text-transform: uppercase;
+    color: $color-light-gray-2;
+    margin-bottom: 0.5rem;
+  }
+
+  &__field-value{
+    @include cInput;
+    width: 17.35rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+    color: var(--color-primary);
+    background-color: $color-light-gray-4;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  &__biz-plan{
+    width: 17.35rem;
+    height: 7rem;
+    margin-bottom: 1rem;
+    &-input{
+      @include cInput;
+      background-color: $color-light-gray-4;
+      height: 100%;
+      width: 100%;
+      resize: none;
+      font-weight: bold;
+    }
+  }
+
+  &__row{
+    display: flex;
+  }
+
+  &__col{
+    margin-right: 2.35rem;
+  }
+
+  &__vcode-img{
+    width:6.95rem;
+    height:3.05rem;
+    background-color: $color-light-gray;
+  }
+
+  &__submit{
+    margin-top: 1rem;
+    padding: 0.9rem 1rem !important;
+    font-size: 0.8rem;
+  }
+}
+

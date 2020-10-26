@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.7.2-web/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=9R7QOoAdYL6yn9hpzMlzBggUtibvRCiW"></script>
+    <script type="text/javascript" src="//api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+	  <script type="text/javascript" src="//api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+    <title>__title.en__ - __title.simple__</title>
+  </head>
+ 
+  <body>
+    <nav class="navbar navbar-bright">
+      <input type="checkbox" class="navbar__checkbox" id="navi-toggle">
+      <div class="navbar__body">
+        <div class="navbar-logo-box">
+          <!-- <img class="navbar-logo" src="/img/logo.png" alt="BTP logo"> -->
+          <span class="navbar__text-logo"><span>__title.en__</span></span>
+          <label for="navi-toggle" class="navbar__menu__button">
+            <svg class="navbar__menu-icon">
+              <use xlink:href="/img/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="navbar__page-title">__title.simple__</div>
+        <div class="navbar-menu-holder">
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/index.html">首页</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/products.html">产品中心</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/solutions.html">解决方案</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/news.html">行业新闻</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/aboutus.html">关于我们</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link--active navbar-menu__link" href="/contactus.html">联系我们</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar__expand">
+        <a class="navbar__expand-link" href="/index.html">首页</a>
+        <a class="navbar__expand-link" href="/products.html">产品中心</a>
+        <a class="navbar__expand-link" href="/solutions.html">解决方案</a>
+        <a class="navbar__expand-link" href="/news.html">行业新闻</a>
+        <a class="navbar__expand-link" href="/aboutus.html">关于我们</a>
+        <a class="navbar__expand-link--active navbar__expand-link" href="/contactus.html">联系我们</a>
+      </div>
+    </nav>
+
+    <section class="contactus__mapwrapper"> 
+      <div id="contactus-map"></div>
+    </section>
+
+    <section class="contactus__content">
+      <h3>__title.full__</h3>
+      <div class="contactus__forms">
+        <div>
+          <h4>联系方式</h4>
+          <div class="contactus__info">
+            <p>公司地址：__contact.address__</p>
+            <p>电话：__contact.phone__</p>
+            <p>Email：__contact.email__</p>
+          </div>
+        </div>
+        <div class="contactus__feedback-sep"></div>
+        <div class="contactus__feedback">
+          <h4>在线反馈</h4> 
+          <form >
+            <fieldset>
+              <div class="form-group form-group-username">
+                <label class="control-label" for="username">姓名</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="请输入您的姓名">
+              </div>
+              <div class="form-group form-group-email">
+                <label class="control-label" for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="请输入您的电子邮箱">
+              </div>
+              <div class="form-group form-group-email">
+                <label class="control-label" for="phone">手机号</label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="请输入您的手机号">
+              </div>
+              <div class="form-group form-group-message">
+                <label class="control-label" for="message">消息</label>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+              </div>           
+              <button type="button" id="submitFeedback" class="btn btn-primary" >提交</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title"></h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">确认</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer class="footer">
+      <div class="footer__body">
+        <div>
+          <h3><i class="fa fa-map-marker"></i> 联系我们</h3>
+          <h4>中国：</h4>
+          <p class="footer-contact">
+            地址：__contact.address__<br>
+            电话：__contact.phone__<br>
+            电子邮箱：__contact.email__<br>
+          </p>
+          <h4>中国香港：</h4>
+          <p class="footer-contact">
+            地址：香港香港新界葵涌葵昌路<br>
+            电话：__contact.phone__<br>
+            电子邮箱：__contact.email__<br>
+          </p>
+        </div>
+        <div>
+          <h3><i class="fab fa-product-hunt"></i> 产品中心</h3>
+          <p> <a href="#">RFID便携读写器</a></p>
+          <p> <a href="#">Lora灌溉系统</a></p>
+          <p> <a href="#">RFID标签</a></p>
+          <p> <a href="#">2G/WIFI模块</a></p>
+        </div>
+        <div>
+          <h3><i class="fab fa-servicestack"></i> 解决方案</h3>
+          <p> <a href="#">RFID定制服务</a></p>
+          <p> <a href="#">区块链智能硬件</a></p>
+          <p> <a href="#">无人管理智慧终端</a></p>
+        </div>
+        <div>
+          <h3><i class="fa fa-heart"></i> 关于我们</h3>
+          <p> <a href="#">公司简介</a></p>
+          <p> <a href="#">联系方式 </a></p>
+          <p> <a href="#">团队介绍 </a></p>
+        </div>    
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/contactus.js"></script>
+  </body>
+</html>

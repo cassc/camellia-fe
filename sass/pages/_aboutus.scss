@@ -1,0 +1,28 @@
+.aboutus{
+  &__header-image{
+    background-image: url('/img/aboutus.jpg');
+    height: 500px;
+    width: 100%;
+    overflow-x:hidden;
+    background-size:cover;
+    background-position:center;
+    margin-top: 2rem;
+    @include respond(tab-land){
+      height: 40vw;
+    }
+  }
+
+  &__content{
+    font-size: 1rem;
+
+    h3{
+      font-weight:bold;
+      margin-top: 3rem;
+    }
+  }
+  
+  &__advantages{ 
+    margin-left: 1rem;
+  }
+  
+}

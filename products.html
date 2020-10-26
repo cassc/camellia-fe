@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="assets/fontawesome-free-5.7.2-web/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>__title.en__ - __title.simple__</title>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-bright">
+      <input type="checkbox" class="navbar__checkbox" id="navi-toggle">
+      <div class="navbar__body">
+        <div class="navbar-logo-box">
+          <!-- <img class="navbar-logo" src="/img/logo.png" alt="BTP logo"> -->
+          <span class="navbar__text-logo"><span>__title.en__</span></span>
+          <label for="navi-toggle" class="navbar__menu__button">
+            <svg class="navbar__menu-icon">
+              <use xlink:href="/img/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="navbar__page-title">__title.simple__</div>
+        <div class="navbar-menu-holder">
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/index.html">首页</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link--active navbar-menu__link" href="/products.html">产品中心</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/solutions.html">解决方案</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/news.html">行业新闻</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/aboutus.html">关于我们</a>
+          </div>
+          <div class="navbar-menu-item">
+            <a class="navbar-menu__link" href="/contactus.html">联系我们</a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar__expand">
+        <a class="navbar__expand-link" href="/index.html">首页</a>
+        <a class="navbar__expand-link--active navbar__expand-link" href="/products.html">产品中心</a>
+        <a class="navbar__expand-link" href="/solutions.html">解决方案</a>
+        <a class="navbar__expand-link" href="/news.html">行业新闻</a>
+        <a class="navbar__expand-link" href="/aboutus.html">关于我们</a>
+        <a class="navbar__expand-link" href="/contactus.html">联系我们</a>
+      </div>
+    </nav>
+
+
+    <div class="mtwocol__content">
+      <div class="mtwocol__left products__left">
+        <div>
+          <div class="products__header-img" style="background-image: url('/img/circuits.jpg')"></div>
+          <h3> 产品中心 </h3><hr>
+          <p>
+            打造物联网行业领先产品
+          </p>
+          
+          <a href="#modal-prod-1" data-toggle="modal" data-target="#modal-prod-1"> RFID便携读写器 </a><br>
+          <a href="#modal-prod-2" data-toggle="modal" data-target="#modal-prod-2"> LoRa智慧灌溉系统</a><br>
+          <a href="#modal-prod-3" data-toggle="modal" data-target="#modal-prod-3">RFID温度标签 </a>
+          
+        </div>
+        
+      </div>
+      <div class="mtwocol__right">
+        <div class="products__grid">
+          <div>
+            <div class="products__item wow animated fadeIn" style="background-image: url('/img/rfid-scanner.png')"
+                 data-toggle="modal" data-target="#modal-prod-1">
+              <div class="products__item-content">
+                <h4>RFID便携读写器</h4>
+                <p>让手机轻松变身专业数据采集设备</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <div class="products__item wow animated fadeIn" style="background-image: url('/img/robo-farm.jpeg')"
+                 data-toggle="modal" data-target="#modal-prod-2">
+              <div class="products__item-content">
+                <h4>LoRa智慧灌溉系统</h4>
+                <p>数据采集、分析及远程控制助力智慧农业</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="products__item wow animated fadeIn" style="background-image: url('/img/rfid-tag-long.jpg')"
+                 data-toggle="modal" data-target="#modal-prod-3">
+              <div class="products__item-content">
+                <h4>RFID温度标签</h4>
+                <p>支持主动与被动模式，满足多种使用场景</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-prod-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">RFID便携读写器</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title">RFID便携读写器</h4>
+            <div class="modalprod__img" style="background-image:url('/img/prod-rfid.png')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section"> 
+                <div>
+                  我司新研发的一款超高频手持扫描机产品，融合了强大的UHF超高频读写功能和条码扫描功能，可以搭配各个厂家的Android 和IOS智能手机或智能设备终端使用，灵活便捷，性能卓越，广泛适用于服装盘点，仓库管理，车辆管理，金融管理等领域的应用。
+                </div>
+              </div>
+              <div class="modalprod__section"> 
+                <h5>产品特点</h5>
+                <ul>
+                  <li>出色的超高频读写性能 </li>
+                  <li>大容量电池 </li>
+                  <li> 握感舒适，符合人体工学 </li>
+                  <li> 能与各智能手机/终端搭配使用 </li>
+                  <li> 高性能扫描头 </li>
+                  <li> 支持蓝牙4.0和蓝牙BLE </li>
+                  <li> 专业超高频读 </li>
+                </ul>
+                
+              </div>
+
+              <div class="modalprod__section"> 
+                <h5>
+                  技术参数
+                  <a id="params-1-btn" href="javascript:;" onClick="toggleTwoColParams('params-1')">显示 <i class="fas fa-caret-right"></i></a>
+                </h5>
+                
+                <div id="params-1" class="modalprod__twocolparams products__hidden">
+                  <h6>物理参数</h6><div></div>
+                  <div>整机尺寸</div><div>143x76x135mm</div>
+                  <div>整机重量</div><div>	469g(含电池)</div>
+                  <div>整机颜色	</div><div>黑色</div>
+                  <div>外观材质</div><div>	塑胶</div>
+                  <div>电池容量</div><div>	5200mAh </div>
+                  <div>待机时间</div><div>>70小时（蓝牙连接状态）</div>
+                  <div>工作时间</div><div>6小时左右（UHF群读）</div>
+                  <div>充电时间</div><div>3-4小时（使用标配电源适配器和数据线）</div>
+                  <div>通讯接口</div><div>	Micro-USB</div>
+                  <div>蜂鸣器</div><div>	1个，支持</div>
+                  <div>指示灯</div><div>	3个，电源电量灯，工作灯，BT连接灯</div>
+                  <div>适配手机尺寸</div><div>	宽度68-80mm，厚度10mm以下</div>
+                  <div>性能参数</div><div></div>
+                  <div>MCU类型</div><div>	Cortex-M3 STM32</div>
+                  <div>主频</div><div>72MHz</div>
+                  <div>存储容量</div><div>	5万张标签</div>
+
+                  <h6>使用环境</h6><div></div>
+                  <div>工作温度</div><div>	-20℃~+50℃</div>
+                  <div>储存温度</div><div>	-40℃~+70℃</div>
+                  <div>环境湿度</div><div>	5%RH~95%RH（无凝结）</div>
+                  <div>滚动测试</div><div>	滚动连续1000次0.5米，6个面接触面滚动后依然稳定运行，达到 IEC 滚动规格</div>
+                  <div>静电放电</div><div>	±15KV空气放电，±8KV接触放电</div>
+
+                  <h6>数据通讯</h6><div></div>
+                  <div>蓝牙</div><div>	支持蓝牙4.0和蓝牙BLE</div>
+                  <div>RFID</div><div>超高频</div>
+                  <div>引擎</div><div>	CM2000-1，基于Impinj Indy R2000</div>
+                  <div>频率</div><div>	920-925MHz/902-928MHz/865-868MHz</div>
+                  <div>天线参数</div><div>	圆极化天线（3dBi）</div>
+                  <div>功率</div><div>	1W（30dBm,支持+5~+30dBm可调节</div>
+                  <div>读卡距离</div><div>	＞22米（室内）；＞8米（室外空旷环境</div>
+                  <div>群读速率</div><div>	＞200标签每秒
+                    <p>注： 读卡距离与群读速率与实际环境有关</p>
+                  </div>
+                  
+                  <h6>条码采集</h6><div></div>
+                  <div>二维扫描引擎</div><div>	SE2707</div>
+                  <div>支持一维条码类型</div><div>	UPC/EAN, Code128, Code39, Code93, Code11, Interleaved 2 of 5, Discrete 2 of 5, Chinese 2 of 5, Codabar, MSI, RSS等</div>
+                  <div>支持二维条码类型</div><div>	PDF417, MicroPDF417, Composite, RSS, TLC- 39, Datamatrix, QR code, Micro QR code, Aztec, MaxiCode; Postal Codes: US PostNet, US Planet, UK Postal, Australian Postal, Japan Postal, Dutch Postal (KIX)等
+                    <p>注：该功能为选配</p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <a href="/contactus.html" class="btn btn-primary">联系购买</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-prod-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">LoRa智慧灌溉系统</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title"></h4>
+            <div class="modalprod__img" style="background-image:url('/img/env.jpg')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section"> 
+                <div>
+                  智慧灌溉系统将传感器采集到的土壤温度、土壤水分、土壤PH值、空气湿度、光强等实时环境数据，通过 无线LoRa终端、LoRa智能网关组网的无线网络传输到智慧云平台，实现数据采集、分析、电磁阀、泵的远程控制，然后再结合专家决策系统的支撑，实现自动或手动灌溉。
+                </div>
+              </div>
+              <div class="modalprod__section"> 
+                <h5>系统特点</h5>
+                <ul>
+                  <li>节水，灌溉水利用系数由原来的40%提高到85%以上。</li>
+                  <li>采用LoRa无线终端与LoRa网关相结合的方式进行数据传输，施工灵活、便捷。用户花费较少的施工成本即可快速体验先进物联网技术带来的管理提升，节省人员，提高效率。</li>
+                  <li>通过先进的物联网技术，真正做到用户随时随地的通过电脑或手机进行远程查看和接收告警。</li>
+                </ul>
+              </div>
+
+              <div class="modalprod__section"> 
+                <h5>技术优势</h5>
+                <ul>
+                  <li><strong>扩展性好</strong>
+                    LoRa网络可以接入上千个节点，可根据灌溉面积需要灵活增减数量，网络扩展性好。模块成本低，免通信资费，整体运营成本较低。</li>
+                  <li><strong>超长距离通信</strong> 采用LoRa调制技术，通信距离达10Km，完美解决了在农业灌溉上的超远距通信问题，为智慧灌溉系统提供有力的无线通信组网保障。</li>
+                  <li><strong>超低功耗</strong> 通过发射功率多级可调、多级休眠、空中唤醒等多重技术优化，可在超低功耗下实现超长距离传输，在电池供电应用中优势明显。 </li>
+                  <li><strong>超高的接收灵敏度</strong>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="modalprod__section"> 
+                <h5>
+                  系统模块
+                  <a id="params-2-btn" href="javascript:;" onClick="toggleTwoColParams('params-2')">显示 <i class="fas fa-caret-right"></i></a>
+                </h5>
+                <div id="params-2" class="products__hidden">
+                  <h6>终端</h6>
+                  <p>主要包含传感器和LoRa通信终端两部分，各类传感器（如空气温湿度传感器、土壤PH传感器等）定时采集的数据通过LoRa无线通信终端传送到网关。</p>
+                  <h6>网关</h6>
+                  <p>LoRa网关将汇集LoRa终端的信息通过WIFI/4G网络或者串口等介质转发到云服务器中。</p>
+                  <h6>云服务器</h6>
+                  <p>自动记录网关发回的传感器采集数据，并把相应的信息发送给应用服务器。</p>
+                  <h6>应用服务器（Web、App等）</h6>
+                  <p>储存传感器数据。显示、查询传感器传回的采集信息，通过科学分析后根据用户设置的触发条件下发控制指令，因而实现远程智能灌溉的目的。</p>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <a href="/contactus.html" class="btn btn-primary">联系购买</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-prod-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">RFID温度标签</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title"></h4>
+            <div class="modalprod__img" style="background-image:url('/img/rfid-temperature.png')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section"> 
+                <div>
+                  本产品能够有效应用于医药冷链领域，生鲜物流领域，医疗健康领域，电力测温领域，粮食、红酒储存领域，机房测温领域，工业生产领域等，可以广泛应用于药品、疫苗、食品、生鲜、红酒等生命周期温度追溯;可以实现人体、动物即时或动态连续测温;电子温度监控，机房、服务区温度监控;工业、生产温度监控。
+                </div>
+              </div>
+              <div class="modalprod__section"> 
+                <h5>产品特点</h5>
+                产品温度读取距离5米，测温分辨率0.1度，内存可擦写10万次。产品加载了一款高度集成的带有温度传感器的芯片，支持全球通用的EPC global Class 1 Gen 2协议，具备主动和被动两种模式，方便于不同应用场合和MCU连接，实现了流通过程中对温度变化的实时监控、记录、读写。
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+            <a href="/contactus.html" class="btn btn-primary">联系购买</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__body">
+        <div>
+          <h3><i class="fa fa-map-marker"></i> 联系我们</h3>
+          <h4>中国：</h4>
+          <p class="footer-contact">
+            地址：__contact.address__<br>
+            电话：__contact.phone__<br>
+            电子邮箱：__contact.email__<br>
+          </p>
+          <h4>中国香港：</h4>
+          <p class="footer-contact">
+            地址：香港香港新界葵涌葵昌路<br>
+            电话：__contact.phone__<br>
+            电子邮箱：__contact.email__<br>
+          </p>
+        </div>
+        <div>
+          <h3><i class="fab fa-product-hunt"></i> 产品中心</h3>
+          <p> <a href="#">RFID便携读写器</a></p>
+          <p> <a href="#">Lora灌溉系统</a></p>
+          <p> <a href="#">RFID标签</a></p>
+          <p> <a href="#">2G/WIFI模块</a></p>
+        </div>
+        <div>
+          <h3><i class="fab fa-servicestack"></i> 解决方案</h3>
+          <p> <a href="#">RFID定制服务</a></p>
+          <p> <a href="#">区块链智能硬件</a></p>
+          <p> <a href="#">无人管理智慧终端</a></p>
+        </div>
+        <div>
+          <h3><i class="fa fa-heart"></i> 关于我们</h3>
+          <p> <a href="#">公司简介</a></p>
+          <p> <a href="#">联系方式 </a></p>
+          <p> <a href="#">团队介绍 </a></p>
+        </div>    
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
